@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMVEX GLOBAL | Specialized Industrial Fasteners & Precision Components</title>
+    <!-- Tailwind CSS CDN for fast styling baseline -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- Top Bar -->
+    <div class="bg-slate-900 border-b border-slate-800 text-xs py-2 px-4 text-slate-400">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fas fa-envelope text-blue-500 mr-1.5"></i> dmvexglobal@gmail.com</span>
+                <span><i class="fas fa-map-marker-alt text-blue-500 mr-1.5"></i> Nashik – 422101, Maharashtra, India</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="admin.html" class="text-blue-400 hover:text-blue-300 transition-colors font-medium"><i class="fas fa-lock mr-1"></i> Admin Dashboard</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-blue-600 text-white font-black text-xl px-3 py-2 rounded tracking-wider shadow-lg shadow-blue-600/30">DMVEX</div>
+                <div>
+                    <span class="block font-bold text-lg tracking-wide text-white">DMVEX GLOBAL</span>
+                    <span class="block text-[10px] text-blue-400 tracking-widest uppercase font-semibold">Industrial Fasteners & Components</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>
+                <a href="#about" class="hover:text-blue-400 transition-colors">About Us</a>
+                <a href="#products" class="hover:text-blue-400 transition-colors">Product Range</a>
+                <a href="#standards" class="hover:text-blue-400 transition-colors">Standards & Quality</a>
+                <a href="#coatings" class="hover:text-blue-400 transition-colors">Coatings</a>
+                <a href="#gallery" class="hover:text-blue-400 transition-colors">Gallery</a>
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg transition-all shadow-md shadow-blue-600/20">Enquire Now</a>
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-4 space-y-2">
+            <a href="#home" class="block py-2 text-slate-300 hover:text-blue-400">Home</a>
+            <a href="#about" class="block py-2 text-slate-300 hover:text-blue-400">About Us</a>
+            <a href="#products" class="block py-2 text-slate-300 hover:text-blue-400">Product Range</a>
+            <a href="#standards" class="block py-2 text-slate-300 hover:text-blue-400">Standards & Quality</a>
+            <a href="#coatings" class="block py-2 text-slate-300 hover:text-blue-400">Coatings</a>
+            <a href="#gallery" class="block py-2 text-slate-300 hover:text-blue-400">Gallery</a>
+            <a href="#contact" class="block py-2 text-blue-400 font-medium">Enquire Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-[85vh] flex items-center justify-center bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+        <div class="max-w-5xl mx-auto text-center relative z-10 py-20 fade-in-up">
+            <span class="inline-block bg-blue-600/10 border border-blue-500/30 text-blue-400 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest mb-6">
+                Specialized Industrial Fasteners & Precision Components
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Engineering Integrity in <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Petrochemical Bolting</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Serving demanding industrial applications where product specification, dimensional conformity, rigorous material identification, and full inspection records drive success.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#products" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-blue-600/30 flex items-center gap-2">
+                    Explore Product Range <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+                <a href="#contact" class="bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-medium px-8 py-3.5 rounded-xl transition-all">
+                    Request Quotation
+                </a>
+            </div>
+            
+            <!-- Quick feature badges -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16 max-w-4xl mx-auto text-left">
+                <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-xl backdrop-blur">
+                    <div class="text-blue-400 text-xl mb-2"><i class="fas fa-certificate"></i></div>
+                    <h3 class="font-semibold text-white mb-1">Strict Compliance</h3>
+                    <p class="text-xs text-slate-400">Manufactured and supplied strictly to ASME, ASTM, API, ISO, and DIN standards.</p>
+                </div>
+                <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-xl backdrop-blur">
+                    <div class="text-blue-400 text-xl mb-2"><i class="fas fa-flask"></i></div>
+                    <h3 class="font-semibold text-white mb-1">In-House Testing</h3>
+                    <p class="text-xs text-slate-400">Chemical composition, hardness, mechanical & thread dimensional inspection per batch.</p>
+                </div>
+                <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-xl backdrop-blur">
+                    <div class="text-blue-400 text-xl mb-2"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="font-semibold text-white mb-1">Advanced Coatings</h3>
+                    <p class="text-xs text-slate-400">Full spectrum of surface treatments including Fluorocarbon, Zylon, and Hot-dip galvanizing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-blue-400 font-semibold text-sm uppercase tracking-wider">Company Profile</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-6">Precision engineered for high-stress industrial sectors</h2>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        <strong>DMVEX GLOBAL</strong> is focused on petrochemical-grade bolting, structural bolts and nuts, and precision-machined components. We serve industrial applications where product specification, dimensional conformity, material identification and inspection records are important to the supply process.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed mb-8">
+                        Our product offering includes stud bolts, threaded studs, nuts and other bolting components manufactured or supplied to the applicable customer and product requirements. Material grade, coating, testing scope and inspection documentation should be agreed against the customer's technical specification and service conditions.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border-l-2 border-blue-500 pl-4">
+                            <span class="block font-bold text-2xl text-white">ASTM / ASME</span>
+                            <span class="text-xs text-slate-400">Grade Compliance</span>
+                        </div>
+                        <div class="border-l-2 border-blue-500 pl-4">
+                            <span class="block font-bold text-2xl text-white">100% Tested</span>
+                            <span class="text-xs text-slate-400">Batch & Heat Number Traceability</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl flex flex-col justify-between">
+                        <i class="fas fa-bolt text-blue-500 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-white mb-2">Petrochemical Bolting</h3>
+                        <p class="text-xs text-slate-400">High-temp/high-pressure studs, B7, B7M, L7, and specialized alloy components.</p>
+                    </div>
+                    <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl flex flex-col justify-between mt-0 sm:mt-6">
+                        <i class="fas fa-layer-group text-blue-500 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-white mb-2">Structural Bolts & Nuts</h3>
+                        <p class="text-xs text-slate-400">Heavy hex nuts, structural fasteners conforming to ASTM F3125 grades A325 / A490.</p>
+                    </div>
+                    <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl flex flex-col justify-between">
+                        <i class="fas fa-cogs text-blue-500 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-white mb-2">Precision Components</h3>
+                        <p class="text-xs text-slate-400">Custom machined parts manufactured precisely to customer drawings and specifications.</p>
+                    </div>
+                    <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl flex flex-col justify-between sm:mt-6">
+                        <i class="fas fa-check-double text-blue-500 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-white mb-2">Quality Assurance</h3>
+                        <p class="text-xs text-slate-400">Rigorous in-house lab testing for chemical analysis, hardness, and dimensions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Range Section -->
+    <section id="products" class="py-24 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-blue-400 font-semibold text-sm uppercase tracking-wider">Catalog</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">Our Product Range</h2>
+                <p class="text-slate-400">Comprehensive inventory of industrial bolting solutions built to withstand extreme operating environments.</p>
+            </div>
+
+            <!-- Dynamic Product Container populated from app.js / localStorage -->
+            <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Populated dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Standards & Product References Section -->
+    <section id="standards" class="py-24 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-blue-400 font-semibold text-sm uppercase tracking-wider">Specifications</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">Standards & Product References</h2>
+                <p class="text-slate-400">Final product supply is subject to the applicable drawing, purchase order, material grade and standard edition.</p>
+            </div>
+
+            <!-- Tabs for Standard Tables -->
+            <div class="flex justify-center gap-4 mb-8">
+                <button onclick="switchTab('tab-threaded')" id="btn-tab-threaded" class="px-5 py-2.5 rounded-lg text-sm font-semibold transition-all bg-blue-600 text-white shadow-md shadow-blue-600/30">Threaded Rods / Stud Bolts</button>
+                <button onclick="switchTab('tab-nuts')" id="btn-tab-nuts" class="px-5 py-2.5 rounded-lg text-sm font-semibold transition-all bg-slate-800 text-slate-300 hover:bg-slate-700">Hex Nuts & Fasteners</button>
+            </div>
+
+            <!-- Table 1: Threaded Rods -->
+            <div id="tab-threaded" class="standard-tab overflow-x-auto bg-slate-900 border border-slate-800 rounded-2xl shadow-xl">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-800/80 text-slate-200 text-xs uppercase tracking-wider">
+                            <th class="p-4 border-b border-slate-700">Standard</th>
+                            <th class="p-4 border-b border-slate-700">Typical Grades / Reference</th>
+                            <th class="p-4 border-b border-slate-700">Application / Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800 text-sm text-slate-300">
+                        <tr class="hover:bg-slate-800/40 transition-colors"><td class="p-4 font-semibold text-white">ASME B18.31.2</td><td class="p-4">Continuous-thread, double-end and flange bolting studs</td><td class="p-4 text-slate-400">Inch-series stud dimensions and product forms</td></tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors"><td class="p-4 font-semibold text-white">ASME B18.2.2</td><td class="p-4">Machine screw, hex, square, hex-flange and coupling nuts</td><td class="p-4 text-slate-400">Inch-series nut dimensions</td></tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors"><td class="p-4 font-semibold text-white">ASTM A193/A193M</td><td class="p-4 text-blue-400 font-medium">B7, B7M, B16, B8/B8M</td><td class="p-4 text-slate-400">High-temperature / high-pressure bolting and stainless bolting</td></tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors"><td class="p-4 font-semibold text-white">ASTM A320/A320M</td><td class="p-4 text-blue-400 font-medium">L7, L7M and applicable stainless grades</td><td class="p-4 text-slate-400">Low-temperature bolting</td></tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors"><td class="p-4 font-semibold text-white">ASTM A194/A194M</td><td class="p-4 text-blue-400 font-medium">2H, 2HM, 7, 7M, 7ML, 4</td><td class="p-4 text-slate-400">Industrial high-pressure / high-temperature nuts</td></tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors"><td class="p-4 font-semibold text-white">ASTM A453/A453M</td><td class="p-4 text-blue-400 font-medium">Grade 660</td><td class="p-4 text-slate-400">Special high-temperature bolting</td></tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors"><td class="p-4 font-semibold text-white">ASTM F3125/F3125M</td><td class="p-4 text-blue-400 font-medium">Grades A325 / A490</td><td class="p-4 text-slate-400">High-strength structural bolts</td></tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors"><td class="p-4 font-semibold text-white">API 20E</td><td class="p-4">API bolting categories</td><td class="p-4 text-slate-400">Oil & gas bolting quality, qualification and traceability</td></tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors"><td class="p-4 font-semibold text-white">ISO 4014 / ISO 4032</td><td class="p-4">As specified</td><td class="p-4 text-slate-400">Metric hex bolts and hex nuts</td></tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors"><td class="p-4 font-semibold text-white">DIN 931 / 933 / 934</td><td class="p-4">As specified</td><td class="p-4 text-slate-400">Metric hex bolts and hex nuts</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Table 2: Hex Nuts & Bolts -->
+            <div id="tab-nuts" class="standard-tab hidden overflow-x-auto bg-slate-900 border border-slate-800 rounded-2xl shadow-xl">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-800/80 text-slate-200 text-xs uppercase tracking-wider">
+                            <th class="p-4 border-b border-slate-700">Standard</th>
+                            <th class="p-4 border-b border-slate-700">Typical Grade</th>
+                            <th class="p-4 border-b border-slate-700">Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800 text-sm text-slate-300">
+                        <tr class="hover:bg-slate-800/40 transition-colors"><td class="p-4 font-semibold text-white">ASTM F3125/F3125M</td><td class="p-4 text-blue-400 font-medium">Grades A325/A490</td><td class="p-4 text-slate-400">Current consolidated ASTM specification for high-strength structural bolts.</td></tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors"><td class="p-4 font-semibold text-white">ASTM A307</td><td class="p-4 text-blue-400 font-medium">Grade A/B</td><td class="p-4 text-slate-400">Carbon-steel bolts, studs and threaded rod for general/lower-strength applications.</td></tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors"><td class="p-4 font-semibold text-white">ISO 4014</td><td class="p-4">As specified</td><td class="p-4 text-slate-400">International dimensional standard for hexagon-head bolts, metric sizes.</td></tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors"><td class="p-4 font-semibold text-white">DIN 931 / DIN 933</td><td class="p-4 text-blue-400 font-medium">8.8, 10.9 etc.</td><td class="p-4 text-slate-400">German dimensional standards traditionally used for hexagon bolts.</td></tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors"><td class="p-4 font-semibold text-white">DIN 7991</td><td class="p-4">Various</td><td class="p-4 text-slate-400">Countersunk hexagon socket screws.</td></tr>
+                        <tr class="hover:bg-slate-800/40 transition-colors"><td class="p-4 font-semibold text-white">BS 4190</td><td class="p-4">—</td><td class="p-4 text-slate-400">British standard for metric hexagon bolts/screws used in engineering.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Quality Assurance Box -->
+            <div class="mt-12 bg-gradient-to-r from-blue-950/60 to-slate-900 border border-blue-500/30 rounded-2xl p-8">
+                <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-3"><i class="fas fa-clipboard-check text-blue-400"></i> Quality Assurance & In-House Testing</h3>
+                <p class="text-slate-300 text-sm mb-6">Testing and inspection carried out in an in-house laboratory. Inspections are performed for each batch, heat number and diameter before release:</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800"><i class="fas fa-check text-blue-400 mr-2"></i> Chemical composition verification</div>
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800"><i class="fas fa-check text-blue-400 mr-2"></i> Hardness testing</div>
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800"><i class="fas fa-check text-blue-400 mr-2"></i> Mechanical property testing</div>
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800"><i class="fas fa-check text-blue-400 mr-2"></i> Dimensional & Thread inspection</div>
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800"><i class="fas fa-check text-blue-400 mr-2"></i> Impact testing</div>
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800"><i class="fas fa-check text-blue-400 mr-2"></i> NDT inspection procedures</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coating Options Section -->
+    <section id="coatings" class="py-24 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-blue-400 font-semibold text-sm uppercase tracking-wider">Surface Protection</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">Coating Options</h2>
+                <p class="text-slate-400">Subject to product suitability and customer specification for corrosion resistance and longevity.</p>
+            </div>
+
+            <div id="coating-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                <!-- Dynamically populated or rendered -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section id="gallery" class="py-24 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-blue-400 font-semibold text-sm uppercase tracking-wider">Visual Showcase</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">Product Image Gallery</h2>
+                <p class="text-slate-400">High-grade fasteners, precision studs, and coated assemblies.</p>
+            </div>
+
+            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Populated dynamically from localStorage / app.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Enquiry Section -->
+    <section id="contact" class="py-24 border-t border-slate-800 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <span class="text-blue-400 font-semibold text-sm uppercase tracking-wider">Get in Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-6">Product Enquiries & Quotations</h2>
+                    <p class="text-slate-300 mb-8 leading-relaxed">
+                        For product enquiries and quotations, please share the applicable standard, material grade, size, quantity, coating requirement, inspection scope and delivery destination.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-600/10 border border-blue-500/30 text-blue-400 p-3 rounded-xl"><i class="fas fa-map-marker-alt text-xl"></i></div>
+                            <div>
+                                <h3 class="font-semibold text-white">Office Address</h3>
+                                <p class="text-sm text-slate-400 mt-1">03, Indraprastha Row House, Anand Nagar, Nashik Road, Nashik – 422101, Maharashtra, India</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-blue-600/10 border border-blue-500/30 text-blue-400 p-3 rounded-xl"><i class="fas fa-envelope text-xl"></i></div>
+                            <div>
+                                <h3 class="font-semibold text-white">Email Address</h3>
+                                <p class="text-sm text-slate-400 mt-1">dmvexglobal@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-xl">
+                    <h3 class="text-xl font-bold text-white mb-6">Quick Enquiry Form</h3>
+                    <form id="enquiry-form" onsubmit="handleEnquiry(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs uppercase font-semibold text-slate-400 mb-2">Your Name / Company</label>
+                            <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 text-sm" placeholder="Enter company or contact name">
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs uppercase font-semibold text-slate-400 mb-2">Email Address</label>
+                                <input type="email" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 text-sm" placeholder="name@company.com">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase font-semibold text-slate-400 mb-2">Standard / Grade</label>
+                                <input type="text" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 text-sm" placeholder="e.g. ASTM A193 B7">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase font-semibold text-slate-400 mb-2">Requirement Details & Quantity</label>
+                            <textarea rows="4" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 text-sm" placeholder="Specify size, coating requirement, inspection scope, and destination..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-medium py-3.5 rounded-lg transition-all shadow-lg shadow-blue-600/30">
+                            Submit Enquiry
+                        </button>
+                    </form>
+                    <div id="enquiry-success" class="hidden mt-4 p-4 bg-emerald-950 border border-emerald-800 text-emerald-300 rounded-lg text-sm text-center">
+                        <i class="fas fa-check-circle mr-2"></i> Thank you! Your enquiry has been recorded. We will contact you shortly.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-12 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="bg-blue-600 text-white font-bold px-2.5 py-1 rounded text-sm">DMVEX</div>
+                <span class="text-white font-semibold">DMVEX GLOBAL</span>
+            </div>
+            <p class="text-xs text-center text-slate-500">
+                Petrochemical Grade Bolting &nbsp;|&nbsp; Structural Fasteners &nbsp;|&nbsp; Precision Components
+            </p>
+            <p class="text-xs text-slate-500">&copy; 2026 DMVEX GLOBAL. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
