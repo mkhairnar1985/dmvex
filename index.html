@@ -10,6 +10,36 @@
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+<!-- Firebase App SDK (CDN) -->
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getFirestore, collection, getDocs, addDoc, deleteDoc, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+    // Your web app's Firebase configuration (Replace with your actual Firebase project config)
+    const firebaseConfig = {
+        apiKey: "AIzaSyAS-ub0ZGX_sQ9-V1uJDBUtMOajxc0rioA",
+        authDomain: "dmvex-de6eb.firebaseapp.com",
+        projectId: "dmvex-de6eb",
+        storageBucket: "dmvex-de6eb.firebasestorage.app",
+        messagingSenderId: "1066589449842",
+        appId: "1:1066589449842:web:e2d4d0c706361d2ba85ceb"
+        };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Make db and functions globally accessible for app.js
+    window.db = db;
+    window.dbCollections = { collection, getDocs, addDoc, deleteDoc, doc, setDoc, getDoc };
+    
+    // Trigger initial load once Firebase is ready
+    if (window.initAppAfterFirebase) {
+        window.initAppAfterFirebase();
+    }
+</script>
+<script src="app.js"></script>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- Top Bar -->
