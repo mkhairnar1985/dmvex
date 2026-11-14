@@ -8,6 +8,37 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+<!-- Firebase App SDK (CDN) -->
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getFirestore, collection, getDocs, addDoc, deleteDoc, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+    // Your web app's Firebase configuration (Replace with your actual Firebase project config)
+    const firebaseConfig = {
+        apiKey: "AIzaSyAS-ub0ZGX_sQ9-V1uJDBUtMOajxc0rioA",
+        authDomain: "dmvex-de6eb.firebaseapp.com",
+        projectId: "dmvex-de6eb",
+        storageBucket: "dmvex-de6eb.firebasestorage.app",
+        messagingSenderId: "1066589449842",
+        appId: "1:1066589449842:web:e2d4d0c706361d2ba85ceb"
+        };
+
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Make db and functions globally accessible for app.js
+    window.db = db;
+    window.dbCollections = { collection, getDocs, addDoc, deleteDoc, doc, setDoc, getDoc };
+    
+    // Trigger initial load once Firebase is ready
+    if (window.initAppAfterFirebase) {
+        window.initAppAfterFirebase();
+    }
+</script>
+<script src="app.js"></script>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased">
 
     <!-- Top Navigation -->
@@ -79,7 +110,28 @@
 
             <!-- Right Column: Current Inventory List & Management -->
             <div class="lg:col-span-2 space-y-6">
-                
+                <!-- Enquiries Inbox Table -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl mt-6">
+                    <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-inbox text-blue-500"></i> Customer Enquiries Inbox
+                    </h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-sm">
+                            <thead>
+                                <tr class="bg-slate-800/80 text-slate-300 text-xs uppercase">
+                                    <th class="p-3">Client / Company</th>
+                                    <th class="p-3">Email</th>
+                                    <th class="p-3">Standard / Grade</th>
+                                    <th class="p-3">Details</th>
+                                    <th class="p-3 text-right">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="admin-enquiries-list" class="divide-y divide-slate-800 text-slate-300">
+                                <!-- Dynamically populated from Firestore -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
                 <!-- Reset Data Button -->
                 <div class="flex justify-between items-center bg-slate-900 border border-slate-800 p-4 rounded-xl">
                     <span class="text-sm text-slate-300">Manage data stored in browser storage (`localStorage`)</span>
